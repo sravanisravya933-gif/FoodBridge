@@ -692,8 +692,10 @@ def shelters():
         <a href="/donations">View Donations</a>
     </body>
     </html>
-    """, records=records
-    create_database()
+""", records=records)
+
+
+create_database()
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
